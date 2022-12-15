@@ -32,7 +32,7 @@ header {
 .s1 {
     width: 100%;
     height: calc(100vh - 
-    350px);
+    300px);
     background-color: #FFFAFA;
     padding: 0% 4% 3%;
     position: relative;
@@ -132,7 +132,7 @@ option {
 }
 
 
-button {
+#btnSubmit {
     border: none;
     background-color: #09814A;
     color: #FDFBFA;
@@ -145,7 +145,7 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
+#btnSubmit:hover {
     background-color: #F0A202;
     color:#121413; 
 }
@@ -239,6 +239,7 @@ ol {
 #wish{
     max-width: 250px;
     background-color: transparent;
+    text-align: center;
 }
   
   .snow {

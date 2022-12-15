@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
     <div class="snow"></div>
@@ -209,37 +210,36 @@
       <h2>Dear Santa,</h2>
       <form action="" method="GET">
         <fieldset id="form2">
-          <p style="margin: 10px 0">Xin kính chào: <br />Xin kính chào 2 lần</p>
+          <p style="margin: 0">Xin kính chào: <br />Xin kính chào 2 lần</p>
           <span>
             <input type="text" id="wish" />
           </span>
-          <button type="submit" id="btnSubmit">Gửi đi</button>
+          <input
+            type="button"
+            id="btnSubmit"
+            value="Gửi đi"
+            onclick="sendEmail()"
+          />
+          <!-- <button id="btnSubmit">Gửi đi</button> -->
         </fieldset>
       </form>
     </section>
 
-    <!-- <section class="s2">
-      <h1>This is my Christmas Wishlist</h1>
-      <div id="letP" class="letP">
-        <div>
-          <h3>Things I want</h3>
-          <ol id="wanted"></ol>
-        </div>
-        <div>
-          <h3>Things I need</h3>
-          <ol id="needed"></ol>
-        </div>
-        <div>
-          <h3>Things I will wear</h3>
-          <ol id="willWear"></ol>
-        </div>
-        <div>
-          <h3>Things I will read</h3>
-          <ol id="willRead"></ol>
-        </div>
-      </div>
-      <h2>thank you Santa!</h2>
-    </section> -->
+    <script>
+      const input = document.querySelector("#wish");
+      function sendEmail() {
+        Email.send({
+          SecureToken: "6604e534-2ef2-4f5e-a6ac-d907fd773486",
+          To: "haophuc.tonthat@gmail.com",
+          From: "haophuc.xemphim@gmail.com",
+          Subject: "Test Email",
+          Body:
+            "<html><h2>Của bạn đây</h2></br><em>" +
+            input.value +
+            "</em></html>",
+        });
+      }
+    </script>
 
     <script src="index.js"></script>
   </body>
