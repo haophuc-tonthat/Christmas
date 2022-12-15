@@ -214,19 +214,19 @@
           <span>
             <input type="text" id="wish" />
           </span>
-          <input
-            type="button"
-            id="btnSubmit"
-            value="Gửi đi"
-            onclick="sendEmail()"
-          />
-          <!-- <button id="btnSubmit">Gửi đi</button> -->
+          <button id="btnSubmit">Gửi đi</button>
         </fieldset>
       </form>
     </section>
 
     <script>
       const input = document.querySelector("#wish");
+      const btnSubmit = document.querySelector("#btnSubmit");
+
+      btnSubmit.addEventListener("click", function (e) {
+        e.preventDefault();
+        sendEmail();
+      });
       function sendEmail() {
         Email.send({
           SecureToken: "6604e534-2ef2-4f5e-a6ac-d907fd773486",
