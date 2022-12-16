@@ -1,0 +1,38 @@
+#popup {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    top:30%;
+    left:46%;
+    margin:-100px 0 0 -150px;
+    background:#73B4AB;
+    width: 90vw;
+    height: 60vh;
+    padding:30px;
+    -webkit-box-shadow:
+        0 0 125px 0 rgba(0,0,0,1),
+        0 0 10000px 500px rgba(0,0,0,.75);
+            box-shadow:
+        0 0 125px 0 rgba(0,0,0,1),
+        0 0 10000px 500px rgba(0,0,0,.75);
+    border-radius:5px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    
+}
+
+#popup h2 {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size:20px;
+    color:#000;
+    text-transform:uppercase;
+}
+
+#popup a{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size:16px;
+    color:#000;
+    text-transform:uppercase;
+    -webkit-transition: .25s ease;
+            transition: .25s ease;
+}

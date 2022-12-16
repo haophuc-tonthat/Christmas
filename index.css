@@ -33,7 +33,7 @@ header {
     width: 100%;
     height: calc(100vh - 
     300px);
-    background-color: #FFFAFA;
+    background-color: #ffe9db;
     /* padding: 0% 4% 3%; */
     position: relative;
     bottom: 40px;
@@ -62,7 +62,7 @@ h3 {
 
 p, input, label, span, ol {
     /* font-family: 'ABeeZee', sans-serif; */
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Encode Sans Condensed', sans-serif;
     font-size: 20px;
     color: #102520;
     border: none;
@@ -139,7 +139,7 @@ option {
     border-radius: 20px;
     /* font-family: 'ABeeZee', sans-serif;
      */
-     font-family: 'Cairo', sans-serif;
+     font-family: 'Encode Sans Condensed', sans-serif;
     font-size: 20px;
     padding: 8px 24px;
     margin-top: 10px;
@@ -2848,6 +2848,35 @@ ol {
     to {
       transform: translate(38.44985vw, 90vh) scale(0.6291);
     }
+  }
+  #globe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vmin;
+    height: 80vmin;
+    transform-origin: 50% 60%;
+  }
+  
+  #globe:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/globe.svg) center center / contain no-repeat;
+    z-index: 10;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
 
