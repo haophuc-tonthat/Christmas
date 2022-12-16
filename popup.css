@@ -3,8 +3,8 @@
     position: absolute;
     z-index: 1000;
     text-align: center;
-    top:30%;
-    left:46%;
+    top:50%;
+    left:44%;
     margin:-100px 0 0 -150px;
     background:#73B4AB;
     width: 90vw;
@@ -26,6 +26,7 @@
     font-size:20px;
     color:#000;
     text-transform:uppercase;
+    margin-bottom: 25px;
 }
 
 #popup a{
