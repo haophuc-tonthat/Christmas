@@ -46,7 +46,8 @@ fieldset {
 }
 
 h1, h2, h3 {
-    font-family: 'Rochester', cursive;
+  font-family: 'Cookie', cursive;
+
     margin-bottom: 48px;
     color:#526A60;
 }
@@ -73,7 +74,6 @@ p, input, label, span, ol {
     padding-top: 16px;
     margin-bottom: 0px;
     color:#09814A;
-    font-family: 'Cookie', cursive;
 }
 
 input[type="radio"]{
